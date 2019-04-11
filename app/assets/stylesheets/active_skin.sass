@@ -1,4 +1,8 @@
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin,latin-ext)
+
+$skinBackgroundColor: #ecf0f1
+$skinTextColor2: #95a5a6
+
 $skinTextColor: #1e2a33 !default
 $skinTextActiveColor: #fff !default
 $skinTextTable: #7f8c8d !default
@@ -11,16 +15,16 @@ $panelHeaderTextColor: #FFFFFF !default
 $skinLogo: #fff image-url("active_skin/default_logo.png") no-repeat 30px 0 !default
 
 html
-  background: #ecf0f1
+  background: $skinBackgroundColor
   font-family: $skinFontFamily
 
 body.active_admin
-  background: #ecf0f1
+  background: $skinBackgroundColor
   font-family: $skinFontFamily
   padding-bottom: 80px
 
 #header
-  background: #ecf0f1
+  background: $skinBackgroundColor
   border: none
   text-shadow: none
   height: 40px
@@ -160,7 +164,7 @@ table.index_table
         color: #fff
         background: $skinActiveColor
   tr.even td
-    background: #ecf0f1
+    background: $skinBackgroundColor
 
 .download_links
   color: $skinTextTable
@@ -176,7 +180,7 @@ table.index_table
   a, span.page.current
     font-family: $skinFontFamily
     border: 1px solid #d3d8dc
-    background: #ecf0f1
+    background: $skinBackgroundColor
     @include no-shadow()
     text-shadow: none
     font-size: 12px
@@ -217,7 +221,7 @@ table.index_table
     font-weight: bold
   .filter_form_field
     label 
-      color: #95a5a6
+      color: $skinTextColor2
       font-weight: normal
       font-size: 13px
       text-transform: uppercase
@@ -255,14 +259,14 @@ a:visited.button
 form fieldset.buttons li.cancel a, 
 form fieldset.actions li.cancel a, 
 form.filter_form a.clear_filters_btn
-  background: #ecf0f1
+  background: $skinBackgroundColor
   @include no-shadow()
   @include rounded(0)
   text-shadow: none
   padding: 10px 20px
-  color: #95a5a6
+  color: $skinTextColor2
   &:hover
-    background: lighten( #ecf0f1, 5% ) !important
+    background: lighten( $skinBackgroundColor, 5% ) !important
 
 form fieldset.inputs
   background: #fff
@@ -312,7 +316,7 @@ form fieldset.inputs
 .attributes_table table th, .attributes_table table td
   padding: 10px 0
   font-family: $skinFontFamily
-  color: #95a5a6
+  color: $skinTextColor2
 .attributes_table table th
   font-weight: normal
   font-size: 13px
